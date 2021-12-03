@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+    <body class="bg-dark">
+        <div class="row my-3 py-3 mt-auto" style="background-color:#080808;">
+            <div class="container"><h2 class="text-secondary text-uppercase text-center">Chillyfrost's Python Project Dashboard</h2></div>
+            
+        </div>
+        <div class="container bg-dark text-light mt-2">     
+        <h5 class="text-info">Media</h5>
+        <hr class="bg-info">
+        <div class="row">
+            <div class="col-md-3 py-3">
+                <h5 class="text-info">Movies</h5>
+                <a class="my-2" href="/movies"><i class="fas fa-list"></i> </a><span class="px-3">View Movie Collection</span><br>
+                <a class="my-2" href="/create"><i class="far fa-plus-square"></i> </a><span class="px-3">Add New Movie</span><br>
+                
+                <a class="my-2"href="/files"><i class="fas fa-film"></i></a><span class="px-3">Watch Movies/TV</span><br>
+            </div>
+
+            <div class="col-md-3 py-3">
+                <h5 class="text-info">Music</h5>
+                <a class="my-2" href="/movies"><i class="fas fa-list"></i> </a><span class="px-3">Music Collection</span><br>
+                <a class="my-2" href="/create"><i class="far fa-plus-square"></i> </a><span class="px-3">Add New Music</span><br>
+                <a class="my-2"href="/files"><i class="fas fa-film"></i></a><span class="px-3">Listen to Music Collection</span><br>
+            </div>
+
+            <div class="col-md-3 py-3">
+                <h5 class="text-info">Books</h5>
+                <a class="my-2" href="/books"><i class="fas fa-list"></i> </a><span class="px-3">Book Collection</span><br>
+                <a class="my-2" href="/createbook"><i class="far fa-plus-square"></i> </a><span class="px-3">Add New Book</span><br>
+            </div>
+            
+            <div class="col-md-3 py-3">
+                <h5 class="text-info">Photos</h5>
+                <a class="my-2" href="/movies"><i class="fas fa-list"></i> </a><span class="px-3">Photo Gallery</span><br>
+                <a class="my-2" href="/create"><i class="far fa-plus-square"></i> </a><span class="px-3">Add New Photos</span><br>
+            </div>
+        </div>
+        
+        <h5 class="mt-4 text-warning">Settings, Profiles & Utilities</h5>
+        <hr class="bg-warning">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="text-warning">Utilities</h5>
+                <a class="my-2" href="/upload"><i class="fas fa-file"></i></a><span class="px-3">File Uploader</span><br>
+                <a class="my-2" href="#"><i class="fas fa-link"></i></a><span class="px-3">Image Converter</span><br>    
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-warning">Settings</h5>
+                <a class="my-2" href="#"><i class="fas fa-file"></i></a><span class="px-3">Profile Settings</span><br>
+                <a class="my-2" href="#"><i class="fas fa-link"></i></a><span class="px-3">Security Settings</span><br>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </div>
+    </body>
+</html>

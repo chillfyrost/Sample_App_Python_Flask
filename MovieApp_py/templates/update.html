@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Movies: Update</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    </head>
+    <body>
+        <div class="container" style="margin: 5rem;">
+            <h1>My Movies: Add new Movie</h1>
+        <form class="ui form" action="" method="POST">
+            <div class="field">
+                <label for="title">Movie Title</label>
+                <input type="text" name="title" value="{{ movie.title }}" placeholder="Enter Movie Title..."> 
+            </div>
+            <div class="field">
+                <label for="releasedYear">Release Year</label>
+                <input type="text" name="releasedYear" value="{{ movie.releasedYear }}" placeholder="Year Released..."> 
+            </div>
+            <div class="field">
+                <label for="formatPri">Disc 1</label>
+                <input type="text" name="formatPri" value="{{ movie.formatPri }}" placeholder="Disc 1..."> 
+            </div>
+            <div class="field">
+                <label for="formatSec">Disc 2</label>
+                <input type="text" name="formatSec" value="{{ movie.formatSec }}" placeholder="Disc 2..."> 
+            </div>
+            <div class="field">
+                <label for="genre">Genre</label>
+                <input type="text" name="genre" value="{{ movie.genre }}" placeholder="Enter Movie Genre.."> 
+            </div>
+            <div class="field">
+                <label for="showType">Category</label>
+                <input type="text" name="showType" value="{{ movie.showType }}" placeholder="Enter Category..."> 
+            </div>
+            <div class="field">
+                <button class="ui blue button" type="submit">Update</button>
+                </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </body>
+</html>
